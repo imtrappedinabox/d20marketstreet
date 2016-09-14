@@ -1,0 +1,440 @@
+/* ===== global settings ===== */
+* {
+padding: 0;
+margin: 0;
+}
+
+body {
+width: 100%;
+margin-top: 10px;
+font-family: Verdana, Arial, Helvetica, sans-serif;
+font-size: 16px;
+background-color: #FFE;
+flex: auto;
+justify-content: center;
+display: flex;
+}
+
+/* top level container width: 900px;*/
+div#page {
+width: 900px;
+}
+
+/* company logo appearing at top of each page */
+div#logo {
+float: left;
+margin: 0 0 20px 0;
+}
+div#holder{
+    position: absolute;
+}
+
+div#m2, div#m3, div#m4{
+    position: absolute;
+    left: 150px;
+    
+}
+
+div#m2{
+top: 170px;
+}
+
+div#m3{
+top: 191px;
+}
+
+div#m4{
+top: 212px;
+}
+
+div#register{
+float: right;
+margin: 1px 0 0 0;
+padding: 0;
+}
+
+div#register a{
+display: block;
+padding: 10px 10px;
+margin: 0px 1px 0 0;
+width: 159px;
+background-color: #048018;
+text-align: center;
+text-decoration: none;
+font: bold .7em Verdana;
+color: #FFF;
+text-align: center;
+text-decoration: none;
+font-size: 12px;
+}
+
+div#register a:hover {background-color: #5FB361;}
+
+div#cart{
+float: right;
+margin: 5px 0 0 0;
+padding: 0;
+}
+
+div#cart a{
+display: block;
+padding: 10px 10px;
+margin: 0px 1px 0 0;
+width: 339px;
+background-color: #048018;
+text-align: center;
+text-decoration: none;
+font: bold .7em Verdana;
+color: #FFF;
+text-align: center;
+text-decoration: none;
+font-size: 12px;
+}
+
+div#cart a:hover {background-color: #5FB361;}
+
+div#dateandtime{
+clear: right;
+float: right;
+margin: 25px 0 0 0;
+padding: 20px;
+font: bold .7em Verdana;
+color: #FFF;
+text-align: center;
+}
+
+/* ===== main menu appearing under logo on each page */
+div#mainMenu {
+height: 165px;
+width: 100%;
+background-color: #093;
+padding: 10px;
+}
+
+/* ===== content area for each page ===== */
+div#content {
+clear: both;
+width: 100%;
+}
+
+div#content p {
+margin: 1em .2em .7em 0;
+text-align: left;
+font-size: 1em;
+}
+
+/* ===== only main page has text at left in content area ===== */
+div#textLeft {
+float: left;
+width: 65%;
+}
+
+div#textLeft h3 {
+margin: 1em 0 .7em;
+text-align: left;
+font-weight: bold;
+font-size: 1em;
+}
+
+div#featured{
+margin: 20px 50px;
+clear: both;
+}
+
+div#featured h1{
+text-decoration: underline;
+}
+
+div#featured a{
+background-color: #093;
+text-decoration: none;
+color: #FFF;
+margin: 20px 50px;
+}
+
+/* ===== only main page has image at right in content area ===== */
+div#image {
+float: left;
+width: 35%;
+text-align: center
+}
+
+div#image img {
+margin-top: 40px;
+}
+
+/* footer must lie below content */
+div#footer {
+clear: left;
+}
+
+div#content h2{
+    text-align: center;
+}
+
+/* copyright notice occupies left portion of footer and
+appears in colors of slightly different shades to distinguish
+it from the menu portion of the footer */
+div#copyright {
+float: left;
+width: 539px;
+padding: 4px 0;
+border-right: 1px solid #FFF;
+background-color: #093;
+color: #DDD;
+text-align: center;
+font-weight: bold;
+font-size: .7em;
+}
+
+/* footer menu appears to right of copyright notice in footer */
+div#footerMenu {
+float: left;
+width: 360px;
+}
+
+div#title{
+text-align: center;
+text-decoration: underline;
+margin-top: 25px;
+}
+
+/* classes for the always-visible menu options and the drop-down menu options */
+.Links {
+padding: 0;
+margin: 0;
+}
+
+/* for the always-visible menu options */
+.Links li {
+padding: 0;
+margin: 0;
+float: left;
+list-style: none;
+font: bold .7em Verdana;
+}
+ 
+.Links li a {
+display: block;
+width: 159px;
+padding: 4px 10px;
+margin: 0 1px 0 0;;
+background-color: #048018;
+color: #FFF;
+text-align: center;
+text-decoration: none;
+}
+
+.Links li a:hover {background-color: #5FB361;}
+
+/* for the drop-down menu options */
+.Links div {
+position: absolute;
+background-color: #C5DCC9;
+border: 1px solid #048018;
+visibility: hidden;
+}
+
+.Links div a {
+display: block;
+width: 156px;
+padding: 5px 10px;
+background-color: #C5DCC9;
+color: #048018;
+text-align: left;
+text-decoration: none;
+font: bold 90% Verdana;
+}
+
+.Links div a:hover {
+background-color: #5FB361;
+color: #FFF;
+}
+
+/* classes for the always-visible menu options and the drop-down menu options */
+.Sublinks {
+padding: 0;
+margin: 0;
+}
+
+/* for the always-visible menu options */
+.Sublinks li {
+padding: 0;
+margin: 0;
+float: left;
+list-style: none;
+font: bold .7em Verdana;
+}
+ 
+.Sublinks li a {
+width: 159px;
+padding: 4px 10px;
+margin: 0 1px 0 0;
+background-color: #048018;
+color: #FFF;
+text-align: center;
+text-decoration: none;
+}
+
+.Sublinks li a:hover {background-color: #5FB361;}
+
+/* for the drop-down menu options */
+.Sublinks div {
+position: absolute;
+background-color: #C5DCC9;
+border: 1px solid #048018;
+visibility: hidden;
+}
+
+.Sublinks div a {
+display: block;
+width: 156px;
+padding: 5px 10px;
+background-color: #C5DCC9;
+color: #048018;
+text-align: left;
+text-decoration: none;
+font: bold 90% Verdana;
+}
+
+.Sublinks div a:hover {
+background-color: #5FB361;
+color: #FFF;
+}
+
+.Products table{
+width: 100%;    
+background-color: #EEE;
+border-style: solid;
+border-color: black;
+border-width: 2px;
+border-radius: 25px;
+padding: 20px;
+margin: 50px 0;
+}
+
+/* ===== several pages have only text in the content area ===== */
+div#textOnly p {
+margin: 1em .2em .7em 0;
+}
+
+div#textOnly ol {
+margin: 20px 100px 20px;
+}
+
+div#textOnly ul {
+margin: 0 50px;
+}
+
+
+/* for the registration and feedback forms */
+.RegisterForm {width: 715px;}
+
+.RegisterForm h4 {
+padding-top: 20px;
+text-align: center;
+}
+
+.RegisterForm select {width: 90px;}
+
+.RegisterForm fieldset {
+width: 500px; 
+padding-left: 5px;
+margin-top: 5px;
+margin-left: 50px; 
+background-color: #EEE;
+}
+
+.RegisterForm span {
+width: 500px; 
+padding-left: 5px;
+margin-left: 50px;
+}
+
+.FeebackForm {width: 715px;}
+
+.FeedbackForm form {padding: 10px 0;}
+
+.FeedbackForm fieldset {
+width: 500px; 
+padding-left: 5px;
+margin-top: 5px;
+margin-left: 50px; 
+background-color: #EEE;
+}
+
+.FeedbackForm h4 {
+padding-top: 20px;
+text-align: center;
+}
+
+.noDecoration {
+text-decoration: none;
+}
+
+
+ul#mainLinks, ul#subLinks, ul#footerLinks {
+height: 100%;
+list-style-type: none;
+}
+
+ul#footerLinks li {
+float: left;
+width: 179px;
+height: 100%;
+padding-bottom: 5px;
+border-right: 1px solid #FFF;
+background-color: #093;
+text-align: center;
+}
+
+ul#mainLinks li a, ul#footerLinks li a {
+color: #FFF;
+text-decoration: none;
+font-weight: bold;
+font-size: .7em;
+}
+
+ul#mainLinks li a:hover, ul#subLinks li a:hover, ul#footerLinks li a:hover {
+padding: 2px 1px;
+background-color: #3F3;
+color: #000;
+}
+
+tr#upload_files{
+visibility: hidden;
+}
+
+/* === some pages with text at left or right of content area have headers === */
+div#textLeft h3, div#textRight h3 {
+margin: 1em 0 .7em;
+text-align: left;
+font-weight: bold;
+font-size: 1em;
+}
+
+.receipt{
+width: 100%;    
+background-color: #EEE;
+border-style: solid;
+border-color: black;
+border-width: 2px;
+border-radius: 25px;
+padding: 20px;
+margin: 50px 0;
+text-align: center;
+}
+ 
+.receipt table{
+width: 100%;
+border: 0px;
+border-collapse: collapse;
+}
+
+.receipt tr, td{
+padding: 5px 5px 5px 5px;
+}
+
+.spacing{
+    clear:both;
+}
